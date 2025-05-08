@@ -114,12 +114,13 @@ class list
 
                 }   
             }
-            
+
         int main ()
             {
             SingleLinkedList mhs;
             int nim;
             char ch;
+            
             while (1)
             {
                 cout << endl;
