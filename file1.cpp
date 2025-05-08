@@ -18,6 +18,7 @@ class list
         {
             START = NULL;
         }
+        
         void addNode()
         {
             int nim;
