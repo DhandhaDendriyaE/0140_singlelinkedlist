@@ -120,11 +120,12 @@ class list
             SingleLinkedList mhs;
             int nim;
             char ch;
-            
+
             while (1)
             {
                 cout << endl;
                     << "Menu";
+                    
                 cout << endl
                     << "1. Menambah data kedalam list" << endl;
                 cout << "2. Menghapus data dari dalam list"<< endl;
