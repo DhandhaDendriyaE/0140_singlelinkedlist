@@ -78,7 +78,7 @@ class list
             return (*current != NULL);
         }
         
-        
+
         bool delNode(int nim)
         {
             Node *current, **previous;
@@ -93,6 +93,7 @@ class list
                 delete current;
                 return true;
         }
+
         void traverse()
             {
                 if (listEmpty())
@@ -111,8 +112,8 @@ class list
                 
                 }
 
+                }   
             }
-        }
     int main ()
         {
         SingleLinkedList mhs;
