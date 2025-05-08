@@ -2,15 +2,52 @@
 #include <string.h>
 using namespace std;
 
-class node
+class Node
 {
     public:
     int noMhs;
-    node *next;
+    Node *next;
 };
 
 class list
 {
-    node *START;
+    Node *START;
     public:
+        list()
+        {
+            START = NULL;
+        }
+        void addNode()
+        {
+            int nim;
+            cout << "\nMasukkan Nomor Mahasiswa: ";
+            cin >> nim;
+
+            Node *nodeBaru = new Node;
+            nodeBaru->noMhs = nim;
+
+            if (START == NULL || nim <= START->noMhs)
+            {
+                if((START != NULL) && (nim == START->noMhs))
+                {
+                    cout << "\nDuplikasi noMhs tdak di ijinkan\n";
+                    return;
+                }
+                nodeBaru->next = START;
+                START = nodeBaru;
+                return;
+            }
+
+            Node *previous = START;
+            Node *current = START;
+
+            while ((current != NULL) && (nim >= current->noMhs))
+            {
+                if (nim == current->noMhs)
+                {
+                    cout << "\nDuplikasi noMhs tidak dijinkan\n";
+                }
+            }
+            
+        }
 }
