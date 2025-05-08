@@ -36,12 +36,13 @@ class list
                     cout << "\nDuplikasi noMhs tdak di ijinkan\n";
                     return;
                 }
-                
+
                 nodeBaru->next = START;
                 START = nodeBaru;
                 return;
             }
 
+            
             Node *previous = START;
             Node *current = START;
 
