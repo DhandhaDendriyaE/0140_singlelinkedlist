@@ -12,6 +12,7 @@ class Node
 class list
 {
     Node *START;
+    
     public:
         list()
         {
@@ -47,7 +48,13 @@ class list
                 {
                     cout << "\nDuplikasi noMhs tidak dijinkan\n";
                 }
+                previous = current;
+                current = current->next;
             }
-            
+
+            nodeBaru->next = current;
+            previous->next = nodeBaru;
         }
+        bool listEmpty()
+
 }
