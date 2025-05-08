@@ -170,6 +170,7 @@ class list
                 break;
                 case '4':
                 {
+                    
                     if (mhs.listEmpty() == true)
                     {
                         cout << "\nList kosong\n";
