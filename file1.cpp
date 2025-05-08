@@ -28,7 +28,7 @@ class list
             Node *nodeBaru = new Node;
             nodeBaru->noMhs = nim;
 
-            
+
             if (START == NULL || nim <= START->noMhs)
             {
                 if((START != NULL) && (nim == START->noMhs))
@@ -36,6 +36,7 @@ class list
                     cout << "\nDuplikasi noMhs tdak di ijinkan\n";
                     return;
                 }
+                
                 nodeBaru->next = START;
                 START = nodeBaru;
                 return;
