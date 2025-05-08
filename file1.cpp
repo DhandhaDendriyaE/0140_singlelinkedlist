@@ -158,6 +158,7 @@ class list
                 << "Data tidak ditemukan" << endl;
 
                 else 
+                {
                 cout << endl
                     << "Data dengan nomor mahasiswa" << nim << " berhasil dihapus " << endl;
                 }
